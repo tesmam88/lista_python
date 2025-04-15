@@ -6,4 +6,4 @@ if num > num2:
     print("O num",num,"é maior que num2")
 
 else:
-    print("Onum2 ",num2,"é maior que num")
+    print("O num2 ",num2,"é maior que num")
