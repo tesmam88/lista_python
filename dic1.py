@@ -242,3 +242,31 @@ if portugues_ingles in tradutor:
 else:
     print("Desculpe, essa palavra não está no nosso dicionário.")
 
+while True:
+    print("\n=== Tradutor Inglês-Português ===")
+    print("1. Consultar tradução")
+    print("2. Adicionar nova palavra")
+    print("3. Sair")
+
+    opcao = input("\nEscolha uma opção (1-3): ")
+
+if opcao == "1":
+        palavra = input("\nDigite uma palavra em inglês para traduzir: ").lower()
+        if palavra in traducao:
+            print(f"A tradução de '{palavra}' é: {traducao[palavra]}")
+        else:
+            print("Palavra não encontrada no dicionário.")
+
+elif opcao == "2":
+        nova_ingles = input("\nDigite a palavra em inglês: ").lower()
+        nova_portugues = input("Digite a tradução em português: ").lower()
+        
+        traducao[nova_ingles] = nova_portugues
+        print(f"Palavra '{nova_ingles}' adicionada com sucesso!")
+
+elif opcao == "3":
+        print("\nObrigado por usar o tradutor. Até mais!")
+else:
+        print("\nOpção inválida! Por favor, escolha 1, 2 ou 3.")
+
+        

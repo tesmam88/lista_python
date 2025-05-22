@@ -19,7 +19,7 @@ depositar = 2
 sacar = 3
 sair =  4
 if menu ==' 1':
-    print("Saldo: {cliente[saldo]}")
+    print("Saldo:'saldo']")
 
 if menu == 2:
     print("Depositar:")
