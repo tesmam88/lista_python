@@ -1,8 +1,7 @@
 #Crie uma função que inverta uma string.
 def inverter(frase):
-   result = reversed
-   return result
+      return ''.join(reversed(frase))
 x = input("Escreva uma frase: ")
 invertido = inverter(x)
-print(x)
+print(invertido)
     
